@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="static/style.css">
+    <title>Резюме</title>
+</head>
+<body>
+<nav class = 'navbar'>
+    <a href = 'index.html'>Главная</a>
+    <a href = 'flask.html'>Мое веб-приложение на flask</a>
+    <a href="https://skillfactory.ru/">Контакты </a>
+</nav>
+<section>
+   <form action='/search'autocomplete =off method='POST'>
+      <p><label for="name1">Введите имя <em> </em></label><input type="text" id="name1" name="name1"></p>
+      <p><input type="submit" value="Поиск"></p>
+   </form>
+</section>
+<section>
+    <div class = 'im__h1'>
+        <h1>Добрый день! Я начинающий веб-разработчик!</h1>
+        <p class="text_2">В этом абзаце будет пара слов обо мне:
+        <br>
+        Знаю языки программирования: Python, Delphy, Lua, C#.
+        </p>
+    </div>
+    <div class="im">
+        <img src ="static/dart.jpg" alt="Мой дом - моя крепость" width="300" height="250">    
+    </div>
+    <div class="im__h1">
+        <p> Здесь вы можете задать мне вопрос! Обязательно укажите имя и адрес почты, чтобы я смог дать ответ!</p>
+    </div>
+</section>
+
+<section class ='f1'>
+    <form action='/answer'autocomplete = off method='POST'>
+        <fieldset class = 'text'>
+            <legend>Задайте ваш вопрос</legend>
+        <p><label for="name">Имя <em>*</em></label><input type="text" id="name" name ='name'></p>
+        <p><label for="email">E-mail</label><input type="email" id="email" name ='email'></p>
+        <textarea rows="10" cols="45" name='message'></textarea>
+        </fieldset>
+    <p><input type="submit" value="Отправить"></p>
+    </form>
+</section>
+<section>
+    <footer>
+        <p>Nikolas Katkoff, 2020</p>
+        <p>Контакты</p>
+    </footer>
+</section>
+</body>
+</html>
